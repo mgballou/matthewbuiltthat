@@ -1,22 +1,28 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
-function About(props){
+function About(props) {
 
 
     return (
 
-        <>
-        <motion.div
+        
+            <motion.div
 
-        className="bg-aqua-500 w-72 h-72 mx-auto my-auto"
-        initial="hidden"
-        animate="visible"
-        exit={{ opacity: 0, transition: { duration: 1 } }}
-        >
-            <h1>About</h1>
+                className="bg-aqua-500 w-72 h-72 mx-auto my-auto"
+                key="about"
+                
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{duration: 1}}
 
-        </motion.div>
-    </>
+
+                
+                exit={{ x: "100vw", transition: {duration: 0.5}}}
+            >
+                <h1>About</h1>
+
+            </motion.div>
+        
 
 
     )
