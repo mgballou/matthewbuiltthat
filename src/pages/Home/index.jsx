@@ -1,7 +1,17 @@
 import { motion, AnimatePresence } from "framer-motion"
 
+import { useNavigate } from "react-router"
+
 
 function Home(props) {
+    const navigate = useNavigate()
+
+    function handleButtonClick(evt){
+       if (evt.target.tagName === "DIV") return
+       navigate(`/${evt.target.id}`)
+
+
+    }
 
     return (
 
@@ -17,8 +27,12 @@ function Home(props) {
                 <h1 className="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">Hi, I'm Matthew Ballou</h1>
                 <h2 className="text-l sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">I'm a full stack software engineer</h2>
 
-                <div className="flex flex-row w-full justify-evenly mt-8 sm:text-l md:text-xl">
+                <div 
+                onClick={handleButtonClick}
+                
+                className="flex flex-row w-full justify-evenly mt-8 sm:text-l md:text-xl">
                     <motion.button
+                        id="about"                        
                         className="border border-cream bg-blush rounded-full  px-2 sm:px-4 md:px-12 py-2"
                         whileHover={{
                             scale: 1.2,
@@ -28,6 +42,7 @@ function Home(props) {
                     >about me</motion.button>
 
                     <motion.button
+                        id="projects"                     
                         className="border border-cream bg-blush rounded-full px-2 sm:px-4 md:px-12 py-2"
                         whileHover={{
                             scale: 1.2,
@@ -37,6 +52,7 @@ function Home(props) {
                     >projects</motion.button>
 
                     <motion.button
+                        id="contact"                         
                         className="border border-cream bg-blush rounded-full px-2 sm:px-4 md:px-12 py-2"
                         whileHover={{
                             scale: 1.2,
