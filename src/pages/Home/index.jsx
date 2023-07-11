@@ -17,6 +17,13 @@ function Home(props) {
                 <h1 className="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">Hi, I'm Matthew Ballou</h1>
                 <h2 className="text-l sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">I'm a full stack software engineer</h2>
 
+                <div className="flex flex-row w-full justify-evenly mt-4">
+                    <button>about</button>
+                    <button>projects</button>
+                    <button>contact</button>
+
+                </div>
+
                 </div>
 
             </motion.div>
