@@ -13,8 +13,15 @@ function App() {
     <>
 
       <Header />
-      <div className="flex h-full">
-        <Main />
+      <div className="
+      flex h-full 
+      px-4 py-40 
+      md:px-10 md:py-24 
+      lg:px-16 lg:py-28 
+      xl:px-20 
+      2xl:px-40">
+
+      <Main />
 
       </div>
 
