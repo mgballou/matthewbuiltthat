@@ -8,7 +8,7 @@ function About(props) {
         
             <motion.div
 
-                className="bg-black/25 h-full w-full mx-auto my-auto"
+                className="bg-black/25 rounded h-full w-full mx-auto my-auto"
                 key="about"
                 
                 initial={{scale: 0, opacity: 0.5}}

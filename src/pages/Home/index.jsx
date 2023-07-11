@@ -7,7 +7,7 @@ function Home(props) {
 
         <motion.div
 
-            className="bg-black/25  w-full h-full mx-auto my-auto"
+            className="bg-black/25 rounded w-full h-full mx-auto my-auto"
             initial={{ scale: 0, opacity: 0.5 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1 }}
