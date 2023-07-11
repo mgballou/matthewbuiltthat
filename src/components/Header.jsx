@@ -26,7 +26,7 @@ function Header(props) {
 
             <div className="flex items-center justify-between w-full">
                 <Link                    
-                    className="font-extrabold text-l py-2 px-4 transition duration-300 rounded hover:underline hover:text-blush hover:bg-gray-400/25"
+                    className="font-extrabold text-2xl font-accent tracking-wide py-2 px-4 transition duration-300 rounded hover:underline hover:text-blush hover:bg-gray-400/25"
                     to="/">matthewbuiltthat</Link>
 
                 <div className="burger-parent md:hidden">
@@ -44,10 +44,10 @@ function Header(props) {
 
 
             <ul 
-            className={`nav-main ${expanded ? "opacity-100" : "opacity-0 -z-50"} absolute left-0 bg-neutral-50 w-full px-4 transition-all ease-in duration-500 md:static md:py-0 md:w-auto md:flex md:flex-row md:items-center md:z-auto md:opacity-100`}>
+            className={`nav-main text-xl ${expanded ? "opacity-100" : "opacity-0 -z-50"} absolute left-0 bg-neutral-50 w-full px-4 transition-all ease-in duration-500 md:static md:py-0 md:w-auto md:flex md:flex-row md:items-center md:z-auto md:opacity-100`}>
                 <li className=" my-4 md:my-0 ">
                     <Link
-                        className="py-2 px-4 transition duration-300 rounded hover:underline hover:text-blush hover:bg-gray-400/25"
+                        className=" py-2 px-4 transition duration-300 rounded hover:underline hover:text-blush hover:bg-gray-400/25"
                         to="/about">about</Link>
                 </li>
 

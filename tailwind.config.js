@@ -36,6 +36,9 @@ export default {
       cream: '#DDC9B4',
       blush: '#C17C74',
     },
+    fontFamily: {
+      accent: 'Ysabeau SC'
+    },
     
     },
   },
