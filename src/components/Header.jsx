@@ -8,12 +8,14 @@ function Header(props){
         
         >
             <div>
-            <Link className="font-extrabold text-l p-2 rounded hover:underline hover:text-blush hover:bg-black/25 "to="/">matthewbuiltthat</Link>
+            <Link className="font-extrabold text-l py-2 px-4 transition duration-300 rounded hover:underline hover:text-blush hover:bg-black/25 "to="/">matthewbuiltthat</Link>
             </div>
 
             <div className="flex flex-row gap-4">
-            <Link className="p-2 rounded hover:underline hover:text-blush hover:bg-black/25" to="/about">about</Link>
-            <Link className="p-2 rounded hover:underline hover:text-blush hover:bg-black/25" to="/projects">projects</Link>
+            <Link className="py-2 px-4 transition duration-300 rounded hover:underline hover:text-blush hover:bg-black/25" to="/about">about</Link>
+            <Link className="py-2 px-4 transition duration-300 rounded hover:underline hover:text-blush hover:bg-black/25" to="/projects">projects</Link>
+            <Link className="py-2 px-4 transition duration-300 rounded hover:underline hover:text-blush hover:bg-black/25" to="/contact">contact</Link>
+
             </div>
 
         </nav>
