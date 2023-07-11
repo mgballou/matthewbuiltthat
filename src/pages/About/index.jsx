@@ -8,7 +8,7 @@ function About(props) {
         
             <motion.div
 
-                className="bg-aqua-500 w-72 h-72 mx-auto my-auto"
+                className="bg-black/25 w-4/5 h-3/5 mx-auto my-auto"
                 key="about"
                 
                 initial={{opacity: 0}}
@@ -17,7 +17,7 @@ function About(props) {
 
 
                 
-                exit={{ x: "100vw", transition: {duration: 0.5}}}
+                exit={{ scale: 0, transition: {duration: 0.5}}}
             >
                 <h1>About</h1>
 

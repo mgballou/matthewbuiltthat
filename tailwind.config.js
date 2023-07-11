@@ -4,9 +4,9 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
-    colors: {
-      'brick': {
+    extend: {
+      colors: {
+      brick: {
         50: '#DEC8CB',
         100: '#D1A1A8',
         200: '#C4838B',
@@ -19,7 +19,7 @@ export default {
         900: '#3A0A10',
         950: '#29060B',
       },
-      'aqua': {
+      aqua: {
         50: '#DBEDF5',
         100: '#AACADA',
         200: '#82A8BB',
@@ -32,7 +32,11 @@ export default {
         900: '#051822',
         950: '#04121A',
       },
-
+      palegold: '#E1DD8F',
+      cream: '#DDC9B4',
+      blush: '#C17C74',
+    },
+    
     },
   },
   plugins: [],

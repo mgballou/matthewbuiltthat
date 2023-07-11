@@ -31,10 +31,13 @@ function Main(props) {
 
 
     return (
-
+        
         <AnimatePresence mode="wait">
             {React.cloneElement(element, { key: location.pathname })}
         </AnimatePresence>
+
+    
+
     )
 
 

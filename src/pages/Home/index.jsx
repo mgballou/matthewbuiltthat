@@ -7,16 +7,17 @@ function Home(props) {
        
             <motion.div
 
-            className="bg-aqua-500 w-72 h-72 mx-auto my-auto"
+            className="bg-black/25  w-4/5 h-3/5 mx-auto my-auto"
             initial={{opacity: 0}}
             animate={{opacity: 1}}
-            transition={{duration: 0.5}}
-
-
-                
-            exit={{ x: "100vw", transition: {duration: 0.5}}}
+            transition={{duration: 1}}
+            exit={{ scale: 0, transition: {duration: 0.5}}}
             >
-                <h1>Hello world</h1>
+                <div className="h-full flex flex-col items-center justify-center">
+                <h1 className="">Hi, I'm Matthew Ballou</h1>
+                <h2 className="">I'm a full stack software engineer</h2>
+
+                </div>
 
             </motion.div>
     )
