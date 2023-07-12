@@ -57,6 +57,10 @@ function About(props) {
 
                         <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Django</p>
 
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">MongoDB</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">PostgreSQL</p>
+
                         <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">C#</p>
 
                         <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">ASP.Net</p>
