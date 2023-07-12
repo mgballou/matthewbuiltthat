@@ -8,7 +8,7 @@ function About(props) {
         
             <motion.div
 
-                className="bg-black/25 rounded h-full w-full mx-auto my-auto"
+                className="bg-black/25 rounded h-full w-full mx-auto my-auto p-4 overflow-scroll"
                 key="about"
                 
                 initial={{scale: 0, opacity: 0.5}}
@@ -19,9 +19,47 @@ function About(props) {
                 
                 exit={{ scale: 0, transition: {duration: 0.5}}}
             >
+                <div className="w-full text-center">
+                    <h2 className="text-xl font-accent">About Me</h2>
+                </div>
 
-                <div className="h-full flex flex-col items-center justify-center">
-                <h1>About</h1>
+                <div className="py-4 md:flex md:flex-row md:gap-2">
+                    <div className=" md:w-1/2 max-w-[600px] mx-auto">
+
+                        <p className="my-2">
+                        Welcome! I’m Matthew. I'm a software engineer adept at front end and back end web development. I have experience in JavaScript, Python, and C#. 
+                        </p>
+
+                        <p className="my-2">
+                        My passion stems from my love of tackling complex problems and delivering innovative solutions. Each project is an opportunity for me to showcase my  expertise, and I consistently strive to deliver results that surpass expectations.
+                        </p>
+
+                        <p className="my-2">
+                        These projects are a testament to my ability to transform abstract ideas into fully realized solutions. Thank you for considering my work.
+                        </p>
+
+                    </div>
+
+                    <div className="mt-4 mb-2 md:w-1/2 flex flex-row flex-wrap justify-center gap-2 max-w-[600px] mx-auto">
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">HTML</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">CSS</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">JavaScript</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">React</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Node.js</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Express.js</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Python</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Django</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">C#</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">ASP.Net</p><p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Tailwind</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Bootstrap</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Sass</p>
+                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Bulma</p>
+                        
+                        
+                    </div>
+                
+
+
                 </div>
 
             </motion.div>
