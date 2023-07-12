@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 
 import Home from '../pages/Home';
 import About from '../pages/About';
+import Projects from "../pages/Projects";
 
 function Main(props) {
 
@@ -19,6 +20,10 @@ function Main(props) {
         {
             path: "/about",
             element: <About />
+        },
+        {
+            path: "/projects",
+            element: <Projects />
         },
 
 

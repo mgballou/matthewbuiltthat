@@ -23,7 +23,7 @@ function About(props) {
                     <h2 className="text-xl font-accent">About Me</h2>
                 </div>
 
-                <div className="py-4 md:flex md:flex-row md:gap-2">
+                <div className="mt-4 mb-2 px-8 md:flex md:flex-row md:gap-2">
                     <div className=" md:w-1/2 max-w-[600px] mx-auto">
 
                         <p className="my-2">
@@ -40,20 +40,34 @@ function About(props) {
 
                     </div>
 
-                    <div className="mt-4 mb-2 md:w-1/2 flex flex-row flex-wrap justify-center gap-2 max-w-[600px] mx-auto">
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">HTML</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">CSS</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">JavaScript</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">React</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Node.js</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Express.js</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Python</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Django</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">C#</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">ASP.Net</p><p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Tailwind</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Bootstrap</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Sass</p>
-                        <p className="h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Bulma</p>
+                    <div className="mt-4 mb-2 md:w-1/2 flex flex-row flex-wrap justify-center gap-2 max-w-[600px] mx-auto font-accent ">
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">HTML</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">CSS</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">JavaScript</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">React</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Node.js</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Express.js</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Python</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Django</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">C#</p>
+
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">ASP.Net</p>
+                        
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Tailwind</p>
+                       
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Bootstrap</p>
+                        
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce  transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Sass</p>
+                        
+                        <p className="opacity-75 hover:opacity-100 hover:animate-bounce transition-all ease-in-out duration-300 h-min px-3 py-2 bg-cream rounded shadow border-4 border-blush text-black ">Bulma</p>
                         
                         
                     </div>
