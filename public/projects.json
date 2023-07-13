@@ -1,30 +1,30 @@
 [
     {
         "title": "Someone's PC",
-        "subtitle": "",
-        "images": ["", "", ""],
-        "tech": ["", "", ""],
-        "description": "",
-        "live": "",
-        "code":""
+        "subtitle": "Video Game Strategy Tool",
+        "images": ["https://picsum.photos/200", "https://placekitten.com/g/200/200", "https://lorempokemon.fakerapi.it/pokemon/200"],
+        "tech": ["JavaScript", "React", "Node.js", "MongoDB", "CSS"],
+        "description": "Someone's PC description. An app that does a thing. Features include this, that, and the third.",
+        "live": "https://someones-pc.netlify.app/",
+        "code":"https://github.com/mgballou/react-someones-pc"
     },
     {
         "title": "Glow - Party Professionals",
-        "subtitle": "",
-        "images": ["", "", ""],
-        "tech": ["", "", ""],
-        "description": "",
-        "live": "",
-        "code":""
+        "subtitle": "Mock Business Website",
+        "images": ["https://picsum.photos/200", "https://placekitten.com/g/200/200", "https://lorempokemon.fakerapi.it/pokemon/200"],
+        "tech": ["Python", "Django", "PostgreSQL", "Bootstrap"],
+        "description": "Glow Party professionals description. An app that does a thing. Features include this, that, and the third.",
+        "live": "https://glowpartyprofessionals-8e25cb39f018.herokuapp.com/",
+        "code":"https://github.com/mgballou/glow_party_professionals"
 
     },
     {
         "title": "Playlist.me",
-        "subtitle": "",
-        "images": ["", "", ""],
-        "tech": ["", "", ""],
-        "description": "",
-        "live": "",
-        "code":""
+        "subtitle": "Music Discovery Tool",
+        "images": ["https://picsum.photos/200", "https://placekitten.com/g/200/200", "https://lorempokemon.fakerapi.it/pokemon/200"],
+        "tech": ["JavaScript", "React", "Google Cloud Functions", "Skelton UI", "Vite"],
+        "description": "Playlist.me description. An app that does a thing. Features include this, that, and the third.",
+        "live": "https://playlist-me.netlify.app/",
+        "code":"https://github.com/mgballou/playlist-me"
     }
 ]
