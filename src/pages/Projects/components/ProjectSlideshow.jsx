@@ -43,25 +43,27 @@ function ProjectSlideshow({ project }) {
     return (
         <AnimatePresence mode="wait">
             <motion.div
-                className="flex flex-col md:flex-row w-full p-4"
+                className="flex flex-col md:flex-row gap-2 w-full p-4 overflow-auto"
                 key={project.title}
                 initial={{ x: 300, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -300, opacity: 0 }}
             >
 
-                <div className="md:w-1/2 mx-auto flex gap-0 items-center justify-center h-full">
+                <div className="md:w-1/2 mx-auto max-h-[200px] flex gap-0 items-center justify-center">
 
                     <motion.button
-                        whileHover={{
-                            scale: 1.2,
-                            transition: { duration: .2 },
-                        }}
                         whileTap={{ scale: 0.9 }}
-                        className=" border border-cream bg-blush rounded px-2 sm:px-4  py-2 "
+                        className=" border border-cream bg-blush rounded h-full"
                         onClick={prevImage}>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        className="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                         </svg>
 
@@ -72,14 +74,10 @@ function ProjectSlideshow({ project }) {
                     </AnimatePresence>
 
                     <motion.button
-                        whileHover={{
-                            scale: 1.2,
-                            transition: { duration: .2 },
-                        }}
                         whileTap={{ scale: 0.9 }}
-                        className="border border-cream bg-blush rounded  px-2 sm:px-4  py-2"
+                        className="border border-cream bg-blush rounded h-full"
                         onClick={nextImage}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
 

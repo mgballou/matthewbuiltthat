@@ -49,25 +49,23 @@ function Projects(props) {
 
         return (
             <>
-                   
-                    <ProjectSlideshow project={projectsData[currentProject]} />
-                <div className="flex items-between content-center h-full">
-                <button className="bg-blush border-cream border-2 rounded"
-                    
-                    onClick={prevProject}>
-                        
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <div className="flex justify-between content-center h-full w-full">
+                    <button
+                        className="bg-blush border-cream border-2 rounded"
+                        onClick={prevProject}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
                         </svg>
                     </button>
+
+                <ProjectSlideshow project={projectsData[currentProject]} />
+
                     <button
-                    className="bg-blush border-cream border-2 rounded" 
-                    onClick={nextProject}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        className="bg-blush border-cream border-2 rounded"
+                        onClick={nextProject}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
                         </svg>
-                        
                     </button>
                 </div>
 
@@ -82,7 +80,7 @@ function Projects(props) {
 
         <motion.div
 
-            className="bg-black/25 rounded w-full h-full mx-auto my-auto overflow-clip"
+            className="bg-black/25 rounded w-full h-full mx-auto my-auto"
             initial={{ scale: 0, opacity: 0.5 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1 }}

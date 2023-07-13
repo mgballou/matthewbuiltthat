@@ -6,7 +6,7 @@ function ImageSlideshow({ image }) {
 
         
             <motion.img
-                className='object-contain border-cream border-4 shrink'
+                className='object-contain max-h-[200px] border-cream border-4 shrink'
                 key={image}
                 src={image}
                 initial={{ opacity: 0 }}
