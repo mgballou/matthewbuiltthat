@@ -23,7 +23,7 @@ function About(props) {
                     <h2 className="text-xl font-accent">About Me</h2>
                 </div>
 
-                <div className="mt-4 mb-2 px-8 md:flex md:flex-row md:gap-2">
+                <div className="mt-6 mb-2 px-8 md:flex md:flex-row md:gap-2">
                     <div className=" md:w-1/2 max-w-[600px] mx-auto">
 
                         <p className="my-2">

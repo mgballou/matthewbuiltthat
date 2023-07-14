@@ -5,8 +5,9 @@ function ImageSlideshow({ image }) {
     return (
 
         
+        // h-[200px] md:h-[250px] lg:h-[350px] max-w-1/2
             <motion.img
-                className='object-contain max-h-[200px] border-cream border-4 shrink'
+                className='object-cover md:object-fill lg:object-contain h-[200px] md:h-[250px] lg:h-[350px] aspect-video  border-cream border-4 shrink'
                 key={image}
                 src={image}
                 initial={{ opacity: 0 }}
