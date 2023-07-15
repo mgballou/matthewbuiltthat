@@ -16,7 +16,7 @@ function Projects(props) {
         const data = await response.json()
         setProjectsData(data)
         setIsLoading(false)
-        console.log(data)
+        
     }
 
     useEffect(() => { getProjectsData() }, [])

@@ -11,8 +11,9 @@ function ProjectSlideshow({ project }) {
 
     const [currentImage, setCurrentImage] = useState(0)
 
+
     function nextImage() {
-        if (currentImage === 2) {
+        if (currentImage === project?.images.length - 1) {
             setCurrentImage(0)
         } else {
             setCurrentImage(currentImage + 1)
@@ -21,7 +22,7 @@ function ProjectSlideshow({ project }) {
 
     function prevImage() {
         if (currentImage === 0) {
-            setCurrentImage(2)
+            setCurrentImage(project?.images.length - 1)
         } else {
             setCurrentImage(currentImage - 1)
         }
@@ -55,7 +56,7 @@ function ProjectSlideshow({ project }) {
                     <h2 className="text-xl font-accent">{project.title}</h2>
                 </div>
 
-                <div className=" mt-6 flex flex-col md:flex-row gap-6 md:gap-2 justify-center">
+                <div className="mt-6 flex flex-col md:flex-row gap-6 md:gap-2 justify-center">
                     <div className="w-[55vw] sm:w-[60vw] md:w-1/2 mx-auto flex gap-0 items-center justify-center z-10">
 
                         <motion.button
@@ -92,23 +93,50 @@ function ProjectSlideshow({ project }) {
 
                     <div className="md:w-1/2 max-w-[600px] mx-auto p-4 md:p-6 flex flex-col h-min">
                         <div className="flex flex-row flex-wrap items-center justify-center gap-2 mx-auto font-accent my-4">
-                        {techEls}
+                            {techEls}
                         </div>
 
                         <h2 className="text-l font-bold mt-2 mb-1 md:px-4">{project.subtitle}</h2>
 
 
                         <p className="mt-1 mb-2 md:px-4">{project.description}</p>
-                        
-                        
-                        <div className="flex justify-evenly mt-4">
-                            <Link
-                                className="border border-cream bg-blush rounded-full  px-2 sm:px-4  py-2"
-                                to={project.live}>View Live</Link>
-                            <Link
-                                className="border border-cream bg-blush rounded-full  px-2 sm:px-4  py-2"
 
-                                to={project.code}>View Code</Link>
+
+                        <div className="flex justify-evenly mt-4">
+                            <motion.button
+                                whileHover={{
+                                    scale: 1.2,
+                                    transition: { duration: .2 },
+                                }}
+                                whileTap={{ scale: 0.9 }}
+                                className="border border-cream bg-blush rounded-full  px-2 sm:px-4  py-2"
+                            >
+                                <Link
+                                    to={project.live}
+                                    target="_blank">View Live</Link>
+
+                            </motion.button>
+
+                            <motion.button
+                                whileHover={{
+                                    scale: 1.2,
+                                    transition: { duration: .2 },
+                                }}
+                                whileTap={{ scale: 0.9 }}
+                                className="border border-cream bg-blush rounded-full  px-2 sm:px-4  py-2"
+                            >
+                                <Link
+
+                                    to={project.code}
+                                    target="_blank">View Code</Link>
+
+                            </motion.button>
+
+
+
+
+
+
                         </div>
 
 

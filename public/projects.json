@@ -11,7 +11,7 @@
     {
         "title": "Glow - Party Professionals",
         "subtitle": "Mock Business Website",
-        "images": ["https://i.imgur.com/qyK4xxg.png", "https://i.imgur.com/NuDie2n.png", "https://i.imgur.com/5r62TLP.png", "https://imgur.com/9DW1pBx", "https://i.imgur.com/dxnT5n6.png", "https://i.imgur.com/TF5UEjS.png", "https://i.imgur.com/65rBR6N.png" ],
+        "images": ["https://i.imgur.com/qyK4xxg.png", "https://i.imgur.com/NuDie2n.png", "https://i.imgur.com/5r62TLP.png", "https://i.imgur.com/9DW1pBx.png", "https://i.imgur.com/dxnT5n6.png", "https://i.imgur.com/TF5UEjS.png", "https://i.imgur.com/65rBR6N.png" ],
         "tech": ["Python", "Django", "PostgreSQL", "Bootstrap"],
         "description": "Glow Party professionals description. An app that does a thing. Features include this, that, and the third.",
         "live": "https://glowpartyprofessionals-8e25cb39f018.herokuapp.com/",
