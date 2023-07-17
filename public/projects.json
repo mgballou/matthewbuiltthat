@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Someone's PC",
+        "subtitle": "Video Game Strategy Tool",
+        "images": ["https://i.imgur.com/wNMPXUE.png", "https://i.imgur.com/OwGHzt5.png", "https://i.imgur.com/IPBrVYH.png", "https://i.imgur.com/D3d0gt1.png", "https://i.imgur.com/PuOwjBN.png", "https://i.imgur.com/uKaoGlP.png" ],
+        "tech": ["JavaScript", "React", "Node.js", "MongoDB", "CSS"],
+        "description": "A full stack web app that streamlines strategic team planning for competitive Pokemon e-sports built using the MERN stack (Mongoose, Express, React, Node). It employs JWT authentication, interfaces with the PokeAPI, and optimizes data presentation. Users can create multiple teams with up to 6 Pokemon, each having unique data for competitive matches.",
+        "live": "https://someones-pc.netlify.app/",
+        "code":"https://github.com/mgballou/react-someones-pc"
+    },
+    {
+        "title": "Glow - Party Professionals",
+        "subtitle": "Mock Business Website",
+        "images": ["https://i.imgur.com/qyK4xxg.png", "https://i.imgur.com/NuDie2n.png", "https://i.imgur.com/5r62TLP.png", "https://i.imgur.com/9DW1pBx.png", "https://i.imgur.com/dxnT5n6.png", "https://i.imgur.com/TF5UEjS.png", "https://i.imgur.com/65rBR6N.png" ],
+        "tech": ["Python", "Django", "PostgreSQL", "Bootstrap"],
+        "description": "A Django application built for a fictional party planning service. The application leverages PostgreSQL for data management, and the end user would be expected to request a booking through the contact form. Styled with Bootstrap with royalty free images from Unsplash.",
+        "live": "https://glowpartyprofessionals-8e25cb39f018.herokuapp.com/",
+        "code":"https://github.com/mgballou/glow_party_professionals"
+
+    },
+    {
+        "title": "Playlist.me",
+        "subtitle": "Music Discovery Tool",
+        "images": ["https://i.imgur.com/D3QWyq1.png", "https://i.imgur.com/aGEf96a.png", "https://i.imgur.com/UVFLv8U.png", "https://i.imgur.com/KDZ5paJ.png", "https://i.imgur.com/7OuUzIi.png"],
+        "tech": ["JavaScript", "React", "Google Cloud", "Skeleton UI", "Vite"],
+        "description": "A serverless React application supported by Google Cloud Functions that leverages the Spotify API and recommendation engine to build custom playlists. Users can search for and select up to five songs from Spotify’s extensive library, and then receive suggested songs with strong similarities to the songs provided.",
+        "live": "https://playlist-me.netlify.app/",
+        "code":"https://github.com/mgballou/playlist-me"
+    }
+]
