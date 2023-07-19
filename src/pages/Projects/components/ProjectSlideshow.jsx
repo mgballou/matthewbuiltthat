@@ -28,6 +28,16 @@ function ProjectSlideshow({ project, index }) {
         }
     }
 
+    const descriptionEls = project?.description.map((item, idx) => {
+
+        return (
+            <p
+            key={idx}
+            className="my-3"
+            >{item}</p>
+        )
+    })
+
 
 
     const techEls = project?.tech.map((item, idx) => {
@@ -99,7 +109,9 @@ function ProjectSlideshow({ project, index }) {
                         <h2 className="text-l font-bold mt-2 mb-1 md:px-4">{project.subtitle}</h2>
 
 
-                        <p className="mt-1 mb-2 md:px-4">{project.description}</p>
+                        <div className="mt-1 mb-2 md:px-4">
+                            {descriptionEls}
+                        </div>
 
 
                         <div className="flex justify-evenly mt-4">
