@@ -58,7 +58,7 @@ function Projects(props) {
                         </svg>
                     </button>
 
-                <ProjectSlideshow project={projectsData[currentProject]} />
+                <ProjectSlideshow project={projectsData[currentProject]} index={currentProject} />
 
                     <button
                         className="bg-blush border-cream border-2 rounded"

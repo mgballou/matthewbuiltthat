@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import ImageSlideshow from "./ImageSlideshow";
 
 
-function ProjectSlideshow({ project }) {
+function ProjectSlideshow({ project, index }) {
 
     const [currentImage, setCurrentImage] = useState(0)
 
@@ -27,6 +27,16 @@ function ProjectSlideshow({ project }) {
             setCurrentImage(currentImage - 1)
         }
     }
+
+    const descriptionEls = project?.description.map((item, idx) => {
+
+        return (
+            <p
+            key={idx}
+            className="my-3"
+            >{item}</p>
+        )
+    })
 
 
 
@@ -53,7 +63,7 @@ function ProjectSlideshow({ project }) {
             >
 
                 <div className="w-full text-center">
-                    <h2 className="text-xl font-accent">{project.title}</h2>
+                    <h2 className="text-xl font-accent">{index + 1}. "{project.title}"</h2>
                 </div>
 
                 <div className="mt-6 flex flex-col md:flex-row gap-6 md:gap-2 justify-center">
@@ -99,7 +109,9 @@ function ProjectSlideshow({ project }) {
                         <h2 className="text-l font-bold mt-2 mb-1 md:px-4">{project.subtitle}</h2>
 
 
-                        <p className="mt-1 mb-2 md:px-4">{project.description}</p>
+                        <div className="mt-1 mb-2 md:px-4">
+                            {descriptionEls}
+                        </div>
 
 
                         <div className="flex justify-evenly mt-4">
